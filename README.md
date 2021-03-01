@@ -21,7 +21,6 @@ Time [musec], X [m], Y [m], Z [m], ID, Intensity, Latitude [Deg], Longitudes [De
 2795827803, 0.032293, 5.781942, -1.549291, 0, 6, 0.320, -15.000, 5.986
 2795827806, 0.083565, 14.399564, 0.251350, 1, 6, 0.333, 1.000, 14.402
 
-
 All __Point Cloud__ PCD-Files have follwoing fields:
 1) X-Coordinate
 2) Y-Coordinate
@@ -43,8 +42,8 @@ Veloparser has follwoing package dependencies:
 ##### Run
 a. for lidar frame decode:
 1. make sure test.pcap is in dir .\input\test.pcap
-2. check your parameters in params.yaml, then: 
-    python main.py --path=.\input\test.pcap  --out-dir=.\output  --config=.\params.yaml
+2. check your parameters in params.yaml, then, run: 
+    "python main.py --path=.\input\test.pcap  --out-dir=.\output  --config=.\params.yaml"
 
 after this operation, you can get your Text files/PCD files as follows:
 
@@ -64,7 +63,7 @@ b. for Format conversion and rename:
 
 If you want to make your datasets like KITTI format(bin files), you should convert your txt files to bin files at first, if you want to make a datset like nuscenes(pcd files), just go to next step and ignore that.
 
-1. put all your txt files to dir .\txt2bin\txt  and run  '' python  txt2bin.py"
+1. put all your txt files to dir .\txt2bin\txt and run  ''python  txt2bin.py"
 
 then, your txt files will convert to bin format and saved in dir ./txt2bin/bin like this:
 
