@@ -19,7 +19,6 @@ Below a sample out of 2 Points in a __point cloud file__
 All __Point Cloud__ Text-Files have follwoing fields:
 Time [musec], X [m], Y [m], Z [m], ID, Intensity, Latitude [Deg], Longitudes [Deg], Distance [m]
 2795827803, 0.032293, 5.781942, -1.549291, 0, 6, 0.320, -15.000, 5.986
-2795827806, 0.083565, 14.399564, 0.251350, 1, 6, 0.333, 1.000, 14.402
 
 All __Point Cloud__ PCD-Files have follwoing fields:
 1) X-Coordinate
