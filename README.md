@@ -49,13 +49,13 @@ after this operation, you can get your Text files/PCD files as follows:
 
 ​	1)Text files in .\output\velodynevlp16\data_ascii:
 
-![1614600893415](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614600893415.png)
+![1614600893415](img_readme/1614600893415.png)
 
 
 
 ​	2)PCD files in .\output\velodynevlp16\data_pcl:
 
-![1614600836040](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614600836040.png)
+![1614600836040](img_readme/1614600836040.png)
 
 
 
@@ -67,13 +67,13 @@ If you want to make your datasets like KITTI format(bin files), you should conve
 
 then, your txt files will convert to bin format and saved in dir ./txt2bin/bin like this:
 
-![1614602160574](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614602160574.png)
+![1614602160574](img_readme/1614602160574.png)
 
 
 
 2. To make a test dataset like KITTI format, the next step is to rename your files like 000000.bin, for bin files(also fits for pcd files, change the parameters in file_rename.py, line 31), run "python file_rename.py", you can get your test dataset in the dir .\txt2bin\bin like this:
 
-   ![1614602847542](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614602847542.png)
+   ![1614602847542](img_readme/1614602847542.png)
 
 c. for visualization your data frames(just for bin files now)
 
@@ -83,13 +83,13 @@ Please make sure that all of those packages are installed (pip or conda).
 
 2. run "python  point_visul.py", the visual will like this:
 
-   ![1614603301315](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614603301315.png)
+   ![1614603301315](img_readme/1614603301315.png)
 
 
 
 Note that lidar data in 000000.bin is not complete(after 000000.bin is complete), that why the visualization result is as above, you can delect this frame when you make your own test dataset .000001.bin will like this:
 
-![1614603496357](C:\Users\92379\AppData\Roaming\Typora\typora-user-images\1614603496357.png)
+![1614603496357](img_readme/1614603496357.png)
 
 If you want to make your full dataset and labeling your data frame, I hope [here]( [Gltina/ACP-3Detection: Deep Learning on 3D Object Detection for Automatic Plug-in Charging Using a Mobile Manipulator (github.com)](https://github.com/Gltina/ACP-3Detection) ) will be helpful.
 
