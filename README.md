@@ -91,7 +91,7 @@ Note that lidar data in 000000.bin is not complete(after 000000.bin is complete)
 
 ![1614603496357](img_readme/1614603496357.png)
 
-If you want to make your full dataset and labeling your data frame, I hope [here]( [Gltina/ACP-3Detection: Deep Learning on 3D Object Detection for Automatic Plug-in Charging Using a Mobile Manipulator (github.com)](https://github.com/Gltina/ACP-3Detection) ) will be helpful.
+If you want to make your full dataset and labeling your data frame, I hope here will be helpful(https://github.com/Gltina/ACP-3Detection).
 
 ##### Note
 
