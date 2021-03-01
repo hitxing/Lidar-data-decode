@@ -39,6 +39,12 @@ Veloparser has follwoing package dependencies:
 - opencv-python  (using pip install opencv-python)
 
 ##### Run
+Firstly, clone this project by:
+"git clone https://github.com/hitxing/Lidar-data-decode.git"
+
+Because empty folders can not be upload on Github, after you clone this project, please create some empty folders as follows:
+![20210301215614471](img_readme/20210301215614471.png)
+
 a. for lidar frame decode:
 1. make sure test.pcap is in dir .\input\test.pcap
 2. check your parameters in params.yaml, then, run: 
