@@ -1,5 +1,5 @@
-### Lidar-data-decode
-In this project, you can decode your lidar data frame(pcap file) and make your own datasets(test dataset) in Windows without any huge c++-based lib or ROS under Ubuntu
+### Lidar-data-decode and dataset preparing
+In this project, you can decode your lidar data frame(pcap file) and make your own datasets in Windows without any huge c++-based lib or ROS under Ubuntu
 1. in lidar data frame decode part:
 - Supports just LSC32(LeiShen Intelligent System) at the moment(you can also change the parameters to fit other lidars like velodyne, robosense...).
 - Takes a pcap file recorded by LSC32 lidar as input.
@@ -92,18 +92,20 @@ Please make sure that all of those packages are installed (pip or conda).
 
 
 
-Note that lidar data in 000000.bin is not complete(after 000000.bin is complete), that why the visualization result is as above, you can delect this frame when you make your own test dataset .000001.bin will like this:
+Note that lidar data in 000000.bin is not complete(data frame after 000000.bin is complete), that why the visualization result is as above, you can delect this frame when you make your own test dataset .000001.bin will like this:
 
 ![1614603496357](img_readme/1614603496357.png)
 
-If you want to make your full dataset and labeling your data frame, I hope here will be helpful(https://github.com/Gltina/ACP-3Detection).
+##### About dataset labeling
+
+If you want to make your full dataset(include labeling your data frame), I hope here will be helpful(https://github.com/Gltina/ACP-3Detection).
 
 ##### Note
 
 Thanks ArashJavan a lot for provide this fantastic project! lidar data frame decode part in Lidar-data-decode is based on https://github.com/ArashJavan/veloparser which Supports Velodyne VLP16, At this moment, Lidar-data-decode supports LSC32-151A andLSC32-151C, actually, this project can support any lidar as long as you change the parameters follow the corresponding technical manual.
 
-The reason why i wrote this project:
- a. I could not find any simple way without installing ROS (Robot operating software) or other huge c++-based lib that does 'just' extract the point clouds from pcap-file.
+The reason why I wrote this project:\
+ a. I could not find any simple way without installing ROS (Robot operating software) or other huge c++-based lib that does 'just' extract the point clouds from pcap-file.\
  b. Provide a reference to expand this project to fit your own lidar and make your own datasets
 
 
