@@ -1,0 +1,11 @@
+gps-port: 8308            ## this term is disable now
+data-port: 6677          ##MSOP ## make sure this data-port is yours, you can check your data-port with wireshark
+type: robosense128
+
+gps: False    ## this term is disable now
+text: False    ##  Ture means save Text files
+ply: True    ##  Ture means save PCD files
+
+from: 0  # first packet to read
+to: -1   # last packet to read
+
