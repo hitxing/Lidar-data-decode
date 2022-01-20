@@ -1,4 +1,12 @@
 ### Lidar-data-decode and dataset preparing
+#### Update @2022.01.20
+- **Add support for RS-Ruby(RoboSense128).**
+- Change configurations in params-robosense.yaml.
+- GPS not tested!
+- Data protocol please refer to [User Manual](https://www.robosense.ai/en/resources).
+
+---
+
 In this project, you can decode your lidar data frame(pcap file) and make your own datasets in Windows without any huge c++-based lib or ROS under Ubuntu
 1. in lidar data frame decode part:
 - Supports just LSC32(LeiShen Intelligent System) at the moment(you can also change the parameters to fit other lidars like velodyne, robosense...).

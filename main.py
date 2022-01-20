@@ -11,7 +11,7 @@ def read_params(path):
     except Exception as ex:
         print(str(ex))
 
-    params = yaml.load(f.read())
+    params = yaml.load(f.read(), Loader=yaml.FullLoader)
     return params
 
 def main(args):
@@ -24,6 +24,8 @@ def main(args):
 
     if "velodyne" in lidar_type.lower():
         lidar_manager = VelodyneManager(lidar_type, path, outdir, params)
+    elif "robosense" in lidar_type.lower():
+        lidar_manager = RoboSenseManager(lidar_type, path, outdir, params)
 
     lidar_manager.run()
 
